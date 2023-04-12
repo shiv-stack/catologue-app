@@ -24,15 +24,26 @@ class LoginPage extends StatelessWidget {
             height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 32.0),
+            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32.0),
             child: Column(
               children: [
                 TextFormField(
                   decoration: const InputDecoration(hintText: "Enter Username"),
                 ),
                 TextFormField(
+                  obscureText: true,
                   decoration: const InputDecoration(hintText: "Enter Password"),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton( 
+                  onPressed: () {
+                    print("Shivam");
+                  },
+                  child: const Text("Login"),
+                  style: TextButton.styleFrom()
+                )
               ],
             ),
           )
